@@ -38,7 +38,7 @@ echo -e "RA20\nPA26\nEA29\nRA30\nEA34\nLA35\nRA36\nRA38\nYA39\nTA40\nAA41\nPA45\
 
 # perform self-scan
 conda activate /home/ctools/protein_structure_course/
-nohup mutatex clusters1-3.pdb -p 3 -x /home/ctools/foldx/foldx -m mutation_list.txt -f suite5 -R repair_runfile_template.txt -M mutate_runfile_template.txt -q poslist.txt  -c -L -l -v -s -a &
+nohup mutatex clusters1-3.pdb -p 3 -x /home/ctools/foldx/foldx -m ../../data/self-scan_templates/mutation_list.txt -f suite5 -R ../../data/self-scan_templates/repair_runfile_template.txt -M ../../data/self-scan_templates/mutate_runfile_template.txt -q poslist.txt  -c -L -l -v -s -a &
 tail -f nohup.out
 
 # view results
