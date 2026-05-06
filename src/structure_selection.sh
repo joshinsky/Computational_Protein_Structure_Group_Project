@@ -16,4 +16,3 @@ conda activate /home/ctools/protein_structure_course
 
 # Run PDBminer to search for structures of our protein of interest.
 nohup PDBminer -u Q13188 -n 2 -f csv &
-nohup: ignoring input and appending output to 'nohup.out'
