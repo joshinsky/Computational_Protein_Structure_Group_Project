@@ -1,6 +1,8 @@
 #!/bin/bash
 
+##########################################################
 # Calculating Free Energy for Local Interactions (s252633)
+##########################################################
 
 # Working directory: src
 
