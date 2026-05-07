@@ -1,6 +1,7 @@
 library("tidyverse")
 
 ### Working directory: src
+### Script used to generate Table 1. in the report
 
 ### Read variants with pathogenicity scores
 variant_data <- read_delim("../data/E_variant_selection_ensemble/variants_only_SARAH.txt", delim = "\t") 
