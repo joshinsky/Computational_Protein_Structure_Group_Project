@@ -25,7 +25,7 @@ gmx_mpi rms -f ../../data/atlas_data/4hkd_B_R3.xtc -s ../../data/atlas_data/4hkd
 
 # trajectory clustering and visualisation
 gmx_mpi cluster -f ../../data/atlas_data/4hkd_B_R3.xtc -s ../../data/atlas_data/4hkd_B_R3.tpr -dm rmsd_matrix.xpm -o rmsd_clust.xpm -g cluster.log -sz clust_size.xvg -cl clusters.pdb -clid clust_id.xvg -method gromos -cutoff 0.497  # select 5 and 1 in interactive menu
-python ../../src/plot_clusters.py -n 6
+python ../../src/F_plot_clusters.py -n 6
 
 # isolate the first three clusters
 cat clusters.pdb | grep -n TITLE				# find out on which line cluster 4 starts
@@ -38,7 +38,9 @@ echo -e "RA20\nPA26\nEA29\nRA30\nEA34\nLA35\nRA36\nRA38\nYA39\nTA40\nAA41\nPA45\
 
 # perform self-scan
 conda activate /home/ctools/protein_structure_course/
-nohup mutatex clusters1-3.pdb -p 3 -x /home/ctools/foldx/foldx -m ../../data/self-scan_templates/mutation_list.txt -f suite5 -R ../../data/self-scan_templates/repair_runfile_template.txt -M ../../data/self-scan_templates/mutate_runfile_template.txt -q poslist.txt  -c -L -l -v -s -a &
+nohup mutatex clusters1-3.pdb -p 3 -x /home/ctools/foldx/foldx -m ../../data/foldxsuite5_templates/mutation_list.txt \
+    -f suite5 -R ../../data/foldxsuite5_templates/repair_runfile_template.txt \
+    -M ../../data/foldxsuite5_templates/mutate_runfile_template.txt -q poslist.txt  -c -L -l -v -s -a &
 tail -f nohup.out
 
 # view results

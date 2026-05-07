@@ -11,7 +11,7 @@ mkdir -p ../ensemble_stability
 cd ../ensemble_stability
 
 # Copy required files
-cp ../data/template_files/* .
+cp ../data/foldxsuite5_templates/* .
 cp ../MD/mutatex/self-scan/clusters1-3.pdb .
 
 # Activate environment

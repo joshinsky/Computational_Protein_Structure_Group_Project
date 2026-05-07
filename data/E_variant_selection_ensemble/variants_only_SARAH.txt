@@ -1,3 +1,4 @@
+Mutation	Source	pathogenicity score	pathogenicity class
 R461Q	ClinVar	0.0859	likely_benign
 E465Q	ClinVar	0.3288	likely_benign
 L466V	ClinVar	0.4839	ambiguous

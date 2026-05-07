@@ -1,10 +1,12 @@
-library(tidyverse)
+library("tidyverse")
+
+### Working directory: src
 
 # Load the data
-clinvar_df <- read_tsv("../data/A:variant_selection/clinvar+patho.tsv")
-cosmic_df  <- read_tsv("../data/cosmic_correct.tsv")
+clinvar_df <- read_tsv("../data/A_variant_selection/clinvar+patho.tsv")
+cosmic_df  <- read_tsv("../data/A_variant_selection/cosmic_correct.tsv")
 # Load the AlphaMissense file
-am_df <- read_tsv("../data/A:variant_selection/AlphaMissense-Search-Q13188.tsv")
+am_df <- read_tsv("../data/A_variant_selection/AlphaMissense-Search-Q13188.tsv")
 
 # Process COSMIC
 cosmic_clean <- cosmic_df %>%
@@ -50,4 +52,4 @@ final_df <- combined_variants %>%
   left_join(am_clean, by = "Mutation")
 
 # Save the result
-write_tsv(final_df, "../data/A:variant_selection/combined_variants_with_scores.tsv")
+write_tsv(final_df, "../data/A_variant_selection/combined_variants_with_scores.tsv")
