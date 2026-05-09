@@ -21,5 +21,5 @@ This directory contains the processing pipeline. The files are prefixed alphabet
 > **Note on `.sh` files:** The Shell scripts are intended as **command logs** rather than automated execution scripts. They document the exact parameters and sequences used during the analysis.
 
 * `A_variant_processing.R`: Initial filtering and processing of database variants.
-* `E_variant_selection_ensemble.R`: Logic for merging scores and selecting final candidates.
+* `E_variant_selection_ensemble.R`: Logic for merging scores from previous steps.
 * `F_plot_clusters.py`: Visualization script for clustering results. Used in F_MD_and_selfscan.sh script.
