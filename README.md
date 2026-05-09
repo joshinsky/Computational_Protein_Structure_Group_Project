@@ -1,6 +1,6 @@
-# Computational Protein Structure Project -  Group 13
+# Protein Structure and Computational Biology Project - Group 13
 
-This repository contains the data and source code required to reproduce the results reported in "Computational Characterization of STK3 SARAH-Domain: Elucidating the Structural Basis of Hippo Pathway Dysregulation in Cancer". The project focuses on the structural analysis, pathogenicity prediction, and stability assessment of STK3 variants.
+This repository contains the data and source code required to reproduce the results reported in **"Computational Characterization of STK3 SARAH-Domain: Elucidating the Structural Basis of Hippo Pathway Dysregulation in Cancer"**. The project focuses on the structural analysis, pathogenicity prediction, and stability assessment of STK3 variants.
 
 ## Repository structure
 
