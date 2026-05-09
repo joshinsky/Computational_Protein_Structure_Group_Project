@@ -17,7 +17,7 @@ conda activate /home/ctools/protein_structure_course
 
 # Run MutateX to calculate the ddG values for the mutations listed in mutation_list.txt
 nohup mutatex ../data/B_structure_selection/stk3_dimer.pdb -p 2 -m ../data/foldxsuite5_templates/mutation_list.txt \
-  -x /home/ctools/foldx/foldx -f suite5 \ -R ../data/foldxsuite5_templates/repair_runfile_template.txt \
+  -x /home/ctools/foldx/foldx -f suite5 -R ../data/foldxsuite5_templates/repair_runfile_template.txt \
   -M ../data/foldxsuite5_templates/mutate_runfile_template.txt -q ../data/C_stability_assessment/poslist.txt -L -l -v -C  none \
   -B  -I ../data/foldxsuite5_templates/interface_runfile_template.txt &
 
