@@ -22,4 +22,4 @@ This directory contains the processing pipeline. The files are prefixed alphabet
 
 * `A_variant_processing.R`: Initial filtering and processing of database variants.
 * `E_variant_selection_ensemble.R`: Logic for merging scores and selecting final candidates.
-* `F_plot_clusters.py`: Visualization script for clustering results.
+* `F_plot_clusters.py`: Visualization script for clustering results. Used in F_MD_and_selfscan.sh script.
